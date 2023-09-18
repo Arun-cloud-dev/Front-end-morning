@@ -1,0 +1,46 @@
+
+
+    <h1>User Registration</h1>
+
+    <form action="submit.php" method="post">
+        <!-- Text Input: Name -->
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your Email">
+            <!-- Password Input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <input type="checkbox" id="interest1" name="interests[]" value="Reading">
+        <label for="interest1">Reading</label>
+        <input type="checkbox" id="interest2" name="interests[]" value="Sports">
+        <label for="interest2">Sports</label>
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <!-- Select Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="in">India</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select>
+        <!-- Hidden Field -->
+        <input type="hidden" name="hiddenField" value="contact us">
+        <!-- File Upload -->
+        <label for="avatar">Upload Avatar:</label>
+        <input type="file" id="avatar" name="avatar">
+        <!-- Textarea -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+        <!-- Reset and Submit Buttons -->
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
