@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ef1111;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-icons {
+            text-align: center;
+        }
+
+        /* Add more custom styles as needed */
+    </style>
+    <title>Special HTML Tags Example</title>
+
+    <div>
+
+
+    <script>
+    function showWelcomeMessage() {
+        alert("Welcome to Besant Online!")
+    }
+</script>
+
+
+
+</head>
+<body>
+    
+    
+    <div class="container">
+        <h1 id="header1">Header Level 1</h1>
+        
+        <h2 id="header2">Header Level 2</h2>
+        <h3 id="header3">Header Level 3</h3>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com/yourpage" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/yourpage" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <h4 id="header4">Header Level 4</h4>
+        <h5 id="header5">Header Level 5</h5>
+
+
+        <button id="welcomeButton" onclick="showWelcomeMessage()">Click me for Welcome</button>
+
+
+
+        <h6 id="header6">Header Level 6</h6>
+        <p id="paragraph">This is a paragraph of text.</p>
+        <a id="link" href="https://www.google.com">Search on line </a>
+        <img id="image" src="./asserts/image.jpg" alt="Example Image">
+        <ul id="unorderedList">
+            <li>Unordered List Item 1</li>
+            <li>Unordered List Item 2</li>
+            <li>Unordered List Item 3</li>
+        </ul>
+        <ol id="orderedList">
+            <li>Ordered List Item 1</li>
+            <li>Ordered List Item 2</li>
+            <li>Ordered List Item 3</li>
+        </ol>
+        <table id="dataTable">
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+        </table>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea>
+            <button type="button" id="submitButton" onclick="showMessage()">Click me</button>
+        </form>
+
+
+
+
+
+
+        <iframe id="exampleIframe" src="https://www.example.com" ></iframe>
+
+
+
+
+        
+    <audio id="audioPlayer" controls>
+            <source src="./asserts/audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+
+
+
+        <div>
+            <p>Fit video to its container size</p>
+            <video id="videoPlayer" controls>
+                <source src="./asserts/video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </div>
+    </div>
+
+
+</body>
+</html>
