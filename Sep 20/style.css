@@ -1,0 +1,50 @@
+nav{
+    background-color: black;
+    color: white;padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+.nav-h1, .nav-li, .nav-ul{
+    display: inline;
+}
+
+.nav-ul{
+    margin-left: 50%;
+}
+
+.nav-li{
+    padding: 20px;
+}
+.nav-li:hover{
+    background-color: yellow;
+    color: black    ;
+}
+
+
+
+/* **************** */
+.footer{
+    background-color: black;
+    color: hsl(0, 7%, 89%);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 20.5px;
+}
+
+.footer a {
+    columns: white;
+    text-decoration: none;
+    transition: color 2s;
+}
+.footer a:hover{
+    color: #f39c12;
+}
+
+div{
+    margin-left: 50px;
+    margin-right: 50px ;
+}
