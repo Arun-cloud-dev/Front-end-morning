@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alerts in JS</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="flex-container">
+    <form id="myForm">
+      <!-- Form fields go here -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <!-- Submit button -->
+      <button type="submit" id="customAlertButton">Submit Form</button>
+    </form>
+  
+    <div id="customAlertDialog" class="hidden">
+      <div class="modal">
+        <h2>Thank You!</h2>
+        <p>You have successfuly submited the Form!<br><br> Stay Hungry & Stay Foolish!</p>
+        <button id="closeButton">Close</button>
+      </div>
+    </div>
+  </div>
+  
+
+  <img src="shoe.jpeg" alt="Nike shoe">
+        <p>Nike shoe</p>
+        <button onclick="purchase()">Purchase - $149</button>
+        <p id="error"></p>
+
+  <script src="index.js"></script>
+
+  </body>
+</html>
