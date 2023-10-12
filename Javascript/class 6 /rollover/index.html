@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>imageRollover with mouse event,</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, est.</p>
+    <img src="./1-removebg-preview.png" style = "height: 100px; width:100px;" id="img" name="img" alt="img image">
+
+    <script>
+        let rolloverimage = document.getElementById("img");
+        rolloverimage.onmouseover = function(){
+            rolloverimage.style = "height:200px; width:200px";
+        };
+        rolloverimage.onmouseout = function(){
+
+            rolloverimage.style = "height:100px; width:100px";
+        };
+
+    </script>
+</body>
+</html>
