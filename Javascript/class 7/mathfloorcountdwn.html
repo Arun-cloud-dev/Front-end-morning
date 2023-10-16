@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: aqua;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+
+        #demo{
+            color: red;
+            text-align: center;
+            font-size: 60px;
+
+            border-radius: 20px;
+            background-color: bisque;
+            writing-mode: vertical-lr;
+            opacity: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Counting Down Begins </h1>
+    <p id="demo"></p>
+
+    <script>
+        // Converting string to required date format
+        let deadline = new Date("Oct 16, 2023 9:55:00")
+            .getTime();
+
+        // To call defined fuction every second
+        let x = setInterval(function () {
+
+            // Getting current time in required format
+            let now = new Date().getTime();
+
+            //calculate diffrences from current time 
+            let timeleft = deadline - now;
+
+            //get values of day , hr, min, sec.
+            let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+
+            let hours = Math.floor(
+                (timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor(
+                (timeleft % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor(
+                (timeleft % (1000 * 60)) / 1000);
+
+
+            // output of the time 
+
+            document.getElementById("demo").innerHTML =
+                days + "D " + hours + "H " +
+                minutes + "M " + seconds + "S ";
+
+
+            // output for over time 
+            if (timeleft < 0) {
+                clearInterval(x);
+                document.getElementById("demo")
+                    .innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
