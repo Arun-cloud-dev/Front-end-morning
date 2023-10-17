@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <h3>Using the <i> querySelector() method </i> to check whether a radio button is selected.</h3>
+        <input type="radio" name="year" value="1999" id="radio1"> 1999 </input><br>
+        <input type="radio" name="year" value="2021" id="radio2"> 2021 </input><br>
+        <input type="radio" name="year" value="2001" id="radio3" /> 2001 </input>
+        <p id="output"></p>
+        <button onclick="getSelectedRadio()">Check selected year</button>
+        <script>
+         // Define a variable to hold a reference to an HTML element with the ID "output".
+            let output = document.getElementById("output");
+
+            // Define a JavaScript function that will be executed when the button is clicked.
+            function getSelectedRadio() {
+                // Use querySelector to find the first checked radio input with the name "year" and store it in the 'selected' variable.
+                var selected = document.querySelector('input[name="year"]:checked');
+
+                // Check if a radio button is selected.
+                if (selected) {
+                    // If a radio button is selected, append a message to the 'output' element.
+                    output.innerHTML += "Radio button is selected.";
+                } else {
+                    // If no radio button is selected, append a different message to the 'output' element.
+                    output.innerHTML += "No radio button is selected.";
+                }
+            }
+        </script>
+    </body>
+</body>
+</html>

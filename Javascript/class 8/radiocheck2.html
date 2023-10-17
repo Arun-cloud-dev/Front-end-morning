@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <input type="radio" name="name" id="myRadio_1" checked> Radio Button-1
+        <p>Click on "Tap to check" button below know whether the radio button is by default checked.</p>
+        <button onclick="func()">Tap to check!</button>
+        <p id="para"></p>
+        <script>
+            // Define a JavaScript function named "func" that will run when the button is clicked.
+            function func() {
+                // Get the radio button element with the ID "myRadio_1" and check if it is checked by default.
+                var a = document.getElementById("myRadio_1").defaultChecked;
+
+                // Display the result in the paragraph element with the ID "para."
+                document.getElementById("para").innerHTML = a;
+            }
+        </script>
+    </body>
+</body>
+</html> 

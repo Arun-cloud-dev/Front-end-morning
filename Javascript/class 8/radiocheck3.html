@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <body>
+        <h3>Using the <i>checked property</i> of the radio button to check whether a radio button is selected</h3>
+        <input type="radio" name="radio" value="10" id="radio1"> 10 </input> <br>
+        <input type="radio" name="radio" value="20" id="radio2"> 20 </input> <br>
+        <input type="radio" name="radio" value="30" id="radio3"> 30 </input>
+        <p id="output"> </p>
+        <button onclick="getSelectedRadio()"> Check radio </button>
+        <script>
+            // Get a reference to an HTML element with the ID "output" and store it in the 'output' variable.
+            let output = document.getElementById("output");
+
+            // Define a JavaScript function called 'getSelectedRadio'.
+            function getSelectedRadio() {
+                // Get all the radio input elements with the 'name' attribute set to 'radio' and store them in the 'radioButtons' variable.
+                let radioButtons = document.getElementsByName('radio');
+
+                // Iterate through each radio button in the 'radioButtons' collection.
+                for (let radio of radioButtons) {
+                    // Check if the current radio button is checked.
+                    if (radio.checked) {
+                        // If the radio button is checked, update the 'output' element's text to display a message with the selected radio button's value.
+                        output.innerText = "The radio button is selected, and its value is " + radio.value;
+                    }
+                }
+            }
+        </script>
+    </body>
+
+</body>
+</html>
