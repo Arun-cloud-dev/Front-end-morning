@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies+color</title>
+</head>
+<body>
+    <select id="color" onchange="display()">
+        <option value="Select Color">select color</option>
+        <option value="yellow">yellow</option>
+        <option value="green">green</option>
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+    </select>
+    <script type="text/javascript">
+        function display(){
+
+            var value = document.getElementById("color").value;
+            if (value != "select Color"){
+                document.bgColor = value;
+                var expirationDate = new Date();
+                expirationDate.setMinutes(expirationDate.getMinutes() + 1);
+                var expires = "expires="+ expirationDate.toUTCString();
+                document.cookie = "color="+value+";"+ expires;            
+            }
+        }
+
+        window.onload = function (){
+            if (document.cookie.length != 0){
+                var array = document.cookie.split("=");
+                document.getElementById("color").value= array[1];
+                document.bgColor = array [1];
+            }
+        }
+    </script>
+    
+</body>
+</html>
